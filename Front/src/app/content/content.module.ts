@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContentComponent } from './content.component';
 import { CardsComponent } from './cards/cards.component';
+import { CardsModule } from './cards/cards.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,CardsModule
   ],
-  declarations: [ContentComponent,CardsComponent],
+  declarations: [ContentComponent],
   exports : [ContentModule]
 })
 export class ContentModule { }

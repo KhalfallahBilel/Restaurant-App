@@ -5,9 +5,9 @@ import { ListCardsComponent } from './list-cards/list-cards.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,ListCardsComponent
   ],
-  declarations: [CardsComponent, ListCardsComponent],
+  declarations: [CardsComponent],
   exports : [CardsModule]
 })
 export class CardsModule { }

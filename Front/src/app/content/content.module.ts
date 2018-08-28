@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContentComponent } from './content.component';
 import { CardsComponent } from './cards/cards.component';
-import { CardsModule } from './cards/cards.module';
+import { CardListComponent } from './cards/card-list/card-list.component';
+
 
 @NgModule({
   imports: [
-    CommonModule,CardsModule
+    CommonModule
   ],
-  declarations: [ContentComponent],
-  exports : [ContentModule]
+  declarations: [ContentComponent, CardsComponent, CardListComponent],
+  exports : [ContentComponent]
 })
 export class ContentModule { }
